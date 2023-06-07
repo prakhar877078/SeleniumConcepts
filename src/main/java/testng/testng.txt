@@ -1,0 +1,56 @@
+TestNg is a java unit testing framework.
+
+Different types of annotations.
+
+Before
+--BS, BC, BT, BM
+--@BeforeTest - this will be executed before every test.
+
+Test
+--@Test
+
+After
+--AS, AC, AT, AM
+
+
+Advantages of TestNg
+
+1. Test Cases and Test Suit
+2. Grouping of Test Cases
+3. Prioritize
+4. Parallel Testing
+5. Parameterization
+6. Reports
+
+Test Suit --> Test Cases --> Test Steps
+
+How to Generate XML File
+
+XML is considered as a suite because we can run multiple Test Class using xml.
+1. Manual
+2. Automatic
+
+Hierarchy of XML File
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="testng.FirstTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
+First two lines are mandatory which represent xml version and type.
+1. <suite name='Suite'></suite>
+inside suite there will be test i.e. <test></test>
+inside test there will be classes i.e. <classes></classes>
+inside classes there will be class i.e. <class name="testng.classname"/>
+
+
+1. Annotations
+2. Dependency Method
+3. Assertions
+4. Grouping
+
